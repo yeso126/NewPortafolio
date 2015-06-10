@@ -61,6 +61,7 @@ gulp.task('watch', function(){
 	gulp.watch(['./src/stylus/estilos.styl', './src/stylus/components/*.styl'],['stylus'])
 	gulp.watch('./src/coffeescript/*.coffee',['coffee'])
   gulp.watch(['./src/jade/*.jade', './src/jade/templates/*.jade'],['jade'])
+  gulp.watch('./src/img/*',['image'])
 });
 
 //Default task
