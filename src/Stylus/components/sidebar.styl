@@ -1,0 +1,31 @@
+@import 'nib'
+naranja= #F24C27
+
+
+
+.Sidebar
+	width 100vw
+	height 100vh
+	background naranja
+	display flex
+	flex-direction column
+	justify-content space-around
+	align-items center
+	position fixed
+	top 0px
+	transform translateX(-100vw)
+	transition 1s
+	&-logo
+		width 50vh
+		height auto
+	&-nav
+		display flex
+		flex-direction column
+		justify-content space-around
+		text-decoration none
+		list-style none
+		padding 0
+		align-items center
+		height 50vh
+	&.is-active
+		transform translateX(0vw)
