@@ -42,6 +42,8 @@ gulp.task('browser-sync', function() {
             index: "index.html"
         }
     });
+    gulp.watch("public/*.html").on('change', browserSync.reload);
+    gulp.watch("public/css/*.css").on('change', browserSync.reload);
   });
 
 gulp.task('image', function () {

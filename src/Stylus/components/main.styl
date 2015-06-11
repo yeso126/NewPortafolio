@@ -1,14 +1,22 @@
 @import 'nib'
 fondo= #FFFFFA
 
-.main
+.main-header
   background fondo
   text-align center
   &-profile
     width 7em
     border-radius 20%
     margin-top 1em
-  &-section
-    background red
-    &-article
-      background blue 
+.main-section
+  &-article
+    text-align center
+    margin 0 1em
+  &-skills
+    text-align center
+    display flex
+    flex-direction column
+    &-child
+      &-img
+        height 80px
+        width 80px
